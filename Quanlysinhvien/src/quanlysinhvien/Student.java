@@ -1,21 +1,32 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+// Sua tren nhanh main
 package quanlysinhvien;
 
-/**
- *
- * @author P606-M01
- */
-public class Quanlysinhvien {
+import java.util.List;
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
+public class Student {
+    private final String maSV;
+    private final String hoTen;
+    private final String ngaySinh;
+
+    public Student(String maSV, String hoTen, String ngaySinh) {
+        this.maSV = maSV;
+        this.hoTen = hoTen;
+        this.ngaySinh = ngaySinh;
     }
-    
+
+    public String getMaSV() { return maSV; }
+    public String getHoTen() { return hoTen; }
+    public String getNgaySinh() { return ngaySinh; }
+
+    @Override
+    public String toString() {
+        return "Mã SV: " + maSV + ", Họ tên: " + hoTen + ", Ngày sinh: " + ngaySinh;
+    }public static Student timKiem(List<Student> list, String maSV) {
+        for (Student s : list) {
+            if (s.getMaSV().equalsIgnoreCase(maSV)) {
+                return s;
+            }
+        }
+        return null;
+    }
 }
