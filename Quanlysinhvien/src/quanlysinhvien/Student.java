@@ -1,4 +1,3 @@
-// Sua dong 1 tren main
 package quanlysinhvien;
 
 import java.util.List;
@@ -21,12 +20,5 @@ public class Student {
     @Override
     public String toString() {
         return "Mã SV: " + maSV + ", Họ tên: " + hoTen + ", Ngày sinh: " + ngaySinh;
-    }public static Student timKiem(List<Student> list, String maSV) {
-        for (Student s : list) {
-            if (s.getMaSV().equalsIgnoreCase(maSV)) {
-                return s;
-            }
-        }
-        return null;
     }
 }
