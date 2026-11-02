@@ -1,4 +1,4 @@
-// Sua tren nhanh main
+// Sua dong 1 tren main
 package quanlysinhvien;
 
 import java.util.List;
