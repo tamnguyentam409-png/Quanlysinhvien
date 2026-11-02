@@ -1,21 +1,23 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+// Day la thay doi gay conflict
 package quanlysinhvien;
 
-/**
- *
- * @author P606-M01
- */
-public class Quanlysinhvien {
+public class Student {
+    private String maSV;
+    private String hoTen;
+    private String ngaySinh;
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
+    public Student(String maSV, String hoTen, String ngaySinh) {
+        this.maSV = maSV;
+        this.hoTen = hoTen;
+        this.ngaySinh = ngaySinh;
     }
-    
+
+    public String getMaSV() { return maSV; }
+    public String getHoTen() { return hoTen; }
+    public String getNgaySinh() { return ngaySinh; }
+
+    @Override
+    public String toString() {
+        return "Mã SV: " + maSV + ", Họ tên: " + hoTen + ", Ngày sinh: " + ngaySinh;
+    }
 }
